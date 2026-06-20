@@ -75,7 +75,7 @@ const About = () => {
             >
               <div className="h-48 rounded-3xl overflow-hidden shadow-lg bg-gray-200 relative">
                 <img
-                  src="/images/foto-perayaan.jpg"
+                  src="/images/bapa.jpeg"
                   alt="Perayaan"
                   className="w-full h-full object-cover"
                 />
@@ -98,7 +98,7 @@ const About = () => {
             >
               <div className="h-64 rounded-3xl overflow-hidden shadow-lg bg-gray-200 relative">
                 <img
-                  src="/images/foto-lomba.jpg"
+                  src="/images/ibu-ibu.jpeg"
                   alt="Lomba"
                   className="w-full h-full object-cover"
                 />
