@@ -75,17 +75,17 @@ const About = () => {
             >
               <div className="h-48 rounded-3xl overflow-hidden shadow-lg bg-gray-200 relative">
                 <img
-                  src="https://images.unsplash.com/photo-1541845157-a53f683a54d4?q=80&w=800&auto=format&fit=crop"
+                  src="/images/foto-perayaan.jpg"
                   alt="Perayaan"
                   className="w-full h-full object-cover"
                 />
               </div>
-              <div className="h-64 rounded-3xl overflow-hidden shadow-lg bg-indo-red relative flex items-center justify-center p-6 text-center">
-                <p className="font-bebas text-3xl text-white">
-                  Semangat
-                  <br />
-                  Gotong Royong
-                </p>
+              <div className="h-64 rounded-3xl overflow-hidden shadow-lg bg-gray-200 relative flex items-center justify-center text-center">
+                <img
+                  src="/images/foto-gotongroyong.jpg"
+                  alt="Gotong Royong"
+                  className="w-full h-full object-cover"
+                />
               </div>
             </motion.div>
 
@@ -98,14 +98,14 @@ const About = () => {
             >
               <div className="h-64 rounded-3xl overflow-hidden shadow-lg bg-gray-200 relative">
                 <img
-                  src="https://images.unsplash.com/photo-1531206715517-5c0ba140b2b8?q=80&w=800&auto=format&fit=crop"
+                  src="/images/foto-lomba.jpg"
                   alt="Lomba"
                   className="w-full h-full object-cover"
                 />
               </div>
               <div className="h-48 rounded-3xl overflow-hidden shadow-lg bg-gray-200 relative">
                 <img
-                  src="https://images.unsplash.com/photo-1511632765486-a01c80cb8fa4?q=80&w=800&auto=format&fit=crop"
+                  src="/images/foto-kebersamaan.jpg"
                   alt="Kebersamaan"
                   className="w-full h-full object-cover"
                 />
