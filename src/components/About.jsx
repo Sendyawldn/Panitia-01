@@ -43,7 +43,7 @@ const About = () => {
             </h2>
             
             <p className="text-lg text-slate-600 mb-6 leading-relaxed">
-              Tahun ini, kita merayakan kemerdekaan yang ke-81 dengan semangat persatuan yang lebih kuat dari sebelumnya. Peringatan kali ini bukan sekadar seremoni, melainkan momentum untuk mempererat tali persaudaraan antar warga.
+              Mempererat tali silaturahmi antar warga, meningkatkan semangat nasionalisme, dan memupuk jiwa sportifitas pemuda RT 01/RW 19.
             </p>
             
             <p className="text-lg text-slate-600 mb-8 leading-relaxed">

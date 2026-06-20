@@ -3,34 +3,40 @@ import { motion } from 'framer-motion';
 
 const scheduleData = [
   {
-    time: "07:00 - 08:30",
-    title: "Upacara Pengibaran Bendera",
-    location: "Lapangan Utama",
-    description: "Diharapkan seluruh warga hadir dengan mengenakan pakaian bernuansa merah putih.",
+    time: "08:00",
+    title: "Pembukaan Acara",
+    location: "Lapangan Bulu Tangkis",
+    description: "Pembukaan resmi acara peringatan HUT RI 81 oleh ketua panitia dan tokoh masyarakat.",
   },
   {
-    time: "09:00 - 12:00",
-    title: "Lomba Anak-anak & Ibu-ibu",
+    time: "08:11 - 11:00",
+    title: "Sesi Lomba Pagi",
     location: "Area Balai Warga",
-    description: "Lomba makan kerupuk, kelereng, masukkan paku dalam botol, dan joget balon.",
+    description: "Perlombaan seru untuk kategori Balita & Anak-anak.",
   },
   {
-    time: "13:00 - 15:30",
-    title: "Lomba Bapak-bapak & Pemuda",
-    location: "Lapangan Voli",
-    description: "Pertandingan voli air, tarik tambang, dan balap karung pakai helm.",
-  },
-  {
-    time: "16:00 - 17:30",
-    title: "Panjat Pinang Ekstrem",
-    location: "Lapangan Utama",
-    description: "Acara puncak sore hari yang paling ditunggu. Siapkan tim terbaikmu!",
-  },
-  {
-    time: "19:30 - Selesai",
-    title: "Malam Tirakatan & Panggung Gembira",
+    time: "11:01 - 11:30",
+    title: "Doorprize",
     location: "Panggung Utama",
-    description: "Pembagian hadiah lomba, pemotongan tumpeng, dan pentas seni dari warga.",
+    description: "Pengundian doorprize sesi pertama untuk warga yang beruntung.",
+  },
+  {
+    time: "11:31 - 13:00",
+    title: "ISHOMA",
+    location: "-",
+    description: "Istirahat, Sholat, dan Makan siang.",
+  },
+  {
+    time: "13:01 - 15:30",
+    title: "Sesi Lomba Siang",
+    location: "Lapangan Utama",
+    description: "Perlombaan kategori Remaja, Ibu-ibu, dan Bapak-bapak.",
+  },
+  {
+    time: "15:31 - Selesai",
+    title: "Doorprize & Penutup",
+    location: "Panggung Utama",
+    description: "Pembagian hadiah pemenang lomba, doorprize utama, dan penutupan acara.",
   }
 ];
 

@@ -17,7 +17,9 @@ const Navbar = () => {
   const navLinks = [
     { name: 'Beranda', href: '#home' },
     { name: 'Tentang', href: '#about' },
+    { name: 'Lomba', href: '#lomba' },
     { name: 'Jadwal', href: '#schedule' },
+    { name: 'Panitia', href: '#panitia' },
   ];
 
   return (
@@ -30,11 +32,11 @@ const Navbar = () => {
         
         {/* Logo */}
         <div className="flex items-center gap-2">
-          <div className="w-10 h-10 rounded-full bg-indo-red flex items-center justify-center text-white font-bebas text-2xl">
+          <div className="w-10 h-10 rounded-full bg-indo-red flex items-center justify-center text-white font-bebas text-2xl shrink-0">
             81
           </div>
           <span className={`font-bebas text-2xl tracking-wider ${isScrolled ? 'text-slate-900' : 'text-slate-900 sm:text-white drop-shadow-md'}`}>
-            HUT RI <span className="text-indo-red">81</span>
+            HUT RI 81 <span className="text-indo-red">Kedep</span>
           </span>
         </div>
 
@@ -49,12 +51,6 @@ const Navbar = () => {
               {link.name}
             </a>
           ))}
-          <a 
-            href="#register" 
-            className="bg-indo-red hover:bg-indo-red-light text-white px-6 py-2 rounded-full font-semibold transition-all shadow-lg hover:shadow-xl hover:-translate-y-0.5"
-          >
-            Daftar Sekarang
-          </a>
         </nav>
 
         {/* Mobile Menu Toggle */}
@@ -85,13 +81,6 @@ const Navbar = () => {
                 {link.name}
               </a>
             ))}
-            <a 
-              href="#register" 
-              onClick={() => setMobileMenuOpen(false)}
-              className="bg-indo-red text-white text-center px-6 py-3 rounded-xl font-semibold mt-2"
-            >
-              Daftar Sekarang
-            </a>
           </motion.div>
         )}
       </AnimatePresence>

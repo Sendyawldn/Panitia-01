@@ -1,42 +1,8 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import { motion } from 'framer-motion';
 import { Calendar, MapPin, ArrowRight } from 'lucide-react';
 
-const CountdownUnit = ({ value, label }) => (
-  <div className="flex flex-col items-center p-3 sm:p-4 bg-white/10 backdrop-blur-md rounded-xl border border-white/20 min-w-[80px] sm:min-w-[100px]">
-    <span className="font-bebas text-4xl sm:text-5xl text-white tracking-wider">{value.toString().padStart(2, '0')}</span>
-    <span className="text-xs sm:text-sm text-white/80 uppercase tracking-widest mt-1">{label}</span>
-  </div>
-);
-
 const Hero = () => {
-  const [timeLeft, setTimeLeft] = useState({ days: 0, hours: 0, minutes: 0, seconds: 0 });
-
-  useEffect(() => {
-    // Target date: August 17th of the current year
-    const currentYear = new Date().getFullYear();
-    const targetDate = new Date(`August 17, ${currentYear} 00:00:00`).getTime();
-
-    const updateCountdown = () => {
-      const now = new Date().getTime();
-      const difference = targetDate - now;
-
-      if (difference > 0) {
-        setTimeLeft({
-          days: Math.floor(difference / (1000 * 60 * 60 * 24)),
-          hours: Math.floor((difference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)),
-          minutes: Math.floor((difference % (1000 * 60 * 60)) / (1000 * 60)),
-          seconds: Math.floor((difference % (1000 * 60)) / 1000)
-        });
-      }
-    };
-
-    const timer = setInterval(updateCountdown, 1000);
-    updateCountdown();
-
-    return () => clearInterval(timer);
-  }, []);
-
   return (
     <section id="home" className="relative min-h-screen flex items-center justify-center pt-20 overflow-hidden bg-slate-900">
       {/* Background with abstract red and white shapes */}
@@ -64,24 +30,14 @@ const Hero = () => {
       <div className="container mx-auto px-6 relative z-20 pt-12 pb-24">
         <div className="max-w-4xl mx-auto text-center flex flex-col items-center">
           
-          <motion.div 
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6 }}
-            className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/10 backdrop-blur-md border border-white/20 text-white mb-8"
-          >
-            <span className="w-2 h-2 rounded-full bg-green-400 animate-pulse" />
-            <span className="text-sm font-medium tracking-wide">Pendaftaran Lomba Telah Dibuka!</span>
-          </motion.div>
-
           <motion.h1 
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
-            className="text-6xl sm:text-7xl md:text-8xl lg:text-9xl text-white drop-shadow-lg leading-none mb-6"
+            className="text-4xl sm:text-5xl md:text-7xl lg:text-8xl text-white drop-shadow-lg leading-tight mb-6 font-bebas uppercase"
           >
-            DIRGAHAYU <br />
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-white to-gray-300">INDONESIA 81</span>
+            Lumpuhkan Rasa Takut dengan <br />
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-white to-gray-300">Kreativitas Tanpa Batas</span>
           </motion.h1>
 
           <motion.p 
@@ -90,7 +46,7 @@ const Hero = () => {
             transition={{ duration: 0.8, delay: 0.4 }}
             className="text-lg sm:text-xl text-white/90 max-w-2xl mb-12 font-light"
           >
-            Mari bersama-sama merayakan hari kemerdekaan Republik Indonesia dengan penuh semangat kebersamaan, perlombaan, dan malam tirakatan yang meriah.
+            Senin, 17 Agustus 2026 di Lapangan Bulu Tangkis RT 01/RW 19, Kp. Kedep, Desa Tlajung Udik, Gunungputri.
           </motion.p>
 
           {/* Event Details */}
@@ -116,26 +72,11 @@ const Hero = () => {
               </div>
               <div className="text-left">
                 <p className="text-sm text-white/70">Lokasi</p>
-                <p className="font-semibold">Lapangan Utama Warga</p>
+                <p className="font-semibold text-sm">Lapangan Bulu Tangkis RT 01/RW 19</p>
               </div>
             </div>
           </motion.div>
 
-          {/* Countdown Timer */}
-          <motion.div 
-            initial={{ opacity: 0, scale: 0.9 }}
-            animate={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 0.8, delay: 0.8 }}
-            className="flex flex-wrap items-center justify-center gap-3 sm:gap-4 mb-12"
-          >
-            <CountdownUnit value={timeLeft.days} label="Hari" />
-            <span className="text-white text-3xl font-bebas pb-6">:</span>
-            <CountdownUnit value={timeLeft.hours} label="Jam" />
-            <span className="text-white text-3xl font-bebas pb-6">:</span>
-            <CountdownUnit value={timeLeft.minutes} label="Menit" />
-            <span className="text-white text-3xl font-bebas pb-6">:</span>
-            <CountdownUnit value={timeLeft.seconds} label="Detik" />
-          </motion.div>
 
           {/* Call to Action */}
           <motion.div 
@@ -145,10 +86,10 @@ const Hero = () => {
             className="flex flex-col sm:flex-row gap-4"
           >
             <a 
-              href="#register" 
+              href="#footer" 
               className="group flex items-center justify-center gap-2 bg-white text-indo-red px-8 py-4 rounded-full font-bold text-lg hover:bg-gray-100 transition-all shadow-[0_0_40px_rgba(255,255,255,0.3)] hover:shadow-[0_0_60px_rgba(255,255,255,0.5)] hover:-translate-y-1"
             >
-              Daftar Lomba
+              Tertarik Jadi Sponsor? Hubungi Kami
               <ArrowRight size={20} className="group-hover:translate-x-1 transition-transform" />
             </a>
             <a 
