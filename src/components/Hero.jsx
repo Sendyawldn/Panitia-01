@@ -92,7 +92,9 @@ const Hero = () => {
             className="flex flex-col sm:flex-row gap-4"
           >
             <a
-              href="#footer"
+              href="https://wa.me/6283834110545"
+              target="_blank"
+              rel="noopener noreferrer"
               className="group flex items-center justify-center gap-2 bg-white text-indo-red px-8 py-4 rounded-full font-bold text-lg hover:bg-gray-100 transition-all shadow-[0_0_40px_rgba(255,255,255,0.3)] hover:shadow-[0_0_60px_rgba(255,255,255,0.5)] hover:-translate-y-1"
             >
               Tertarik Jadi Sponsor? Hubungi Kami
