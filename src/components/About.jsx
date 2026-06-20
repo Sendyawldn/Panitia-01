@@ -82,7 +82,7 @@ const About = () => {
               </div>
               <div className="h-64 rounded-3xl overflow-hidden shadow-lg bg-gray-200 relative flex items-center justify-center text-center">
                 <img
-                  src="/images/foto-gotongroyong.jpg"
+                  src="/images/panitia.jpeg"
                   alt="Gotong Royong"
                   className="w-full h-full object-cover"
                 />
@@ -105,7 +105,7 @@ const About = () => {
               </div>
               <div className="h-48 rounded-3xl overflow-hidden shadow-lg bg-gray-200 relative">
                 <img
-                  src="/images/foto-kebersamaan.jpg"
+                  src="/images/alpin.jpeg"
                   alt="Kebersamaan"
                   className="w-full h-full object-cover"
                 />

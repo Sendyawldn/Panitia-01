@@ -38,9 +38,9 @@ const Hero = () => {
             transition={{ duration: 0.8, delay: 0.2 }}
             className="text-4xl sm:text-5xl md:text-7xl lg:text-8xl text-white drop-shadow-lg leading-tight mb-6 font-bebas uppercase"
           >
-            Lumpuhkan Rasa Takut dengan <br />
+            Pemuda Berkarya Warga Bersatu <br />
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-white to-gray-300">
-              Kreativitas Tanpa Batas
+              Indonesia Maju
             </span>
           </motion.h1>
 
